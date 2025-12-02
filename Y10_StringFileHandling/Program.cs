@@ -23,21 +23,21 @@ namespace Y10_StringFileHandling
         static void FileHandling()
         {
             StreamReader FileToRead = new StreamReader("//hgs-fs6/users$/students/22/22zkeyan/My Documents/MB A2S2 for cs.txt");
-            Console.WriteLine(FileToRead.ReadToEnd()); //reads file from start to end
-            Console.WriteLine(FileToRead.ReadLine()); //reads the first line
+            //Console.WriteLine(FileToRead.ReadToEnd()); //reads file from start to end
+            //Console.WriteLine(FileToRead.ReadLine()); //reads the first line
             FileToRead.Close(); //closes the current file so that when it's reopended it will start reading from the start of the text
             FileToRead = new StreamReader("//hgs-fs6/users$/students/22/22zkeyan/My Documents/MB A2S2 for cs.txt"); //same as line 25
             do
             {
                 Console.WriteLine(FileToRead.ReadLine());
             } while (!FileToRead.EndOfStream); //continues until reaches end of file
-            FileToRead.Close(); //closes the current file so that when it's reopended it will start reading from the start of the text
-            FileToRead = new StreamReader("//hgs-fs6/users$/students/22/22zkeyan/My Documents/MB A2S2 for cs.txt"); //same as line 25
-            string[] allWordsInFile = FileToRead.ReadToEnd().Split();
-            foreach (string word in allWordsInFile)
-            {
-                Console.WriteLine(word);
-            }
+            //FileToRead.Close(); //closes the current file so that when it's reopended it will start reading from the start of the text
+            //FileToRead = new StreamReader("//hgs-fs6/users$/students/22/22zkeyan/My Documents/MB A2S2 for cs.txt"); //same as line 25
+            //string[] allWordsInFile = FileToRead.ReadToEnd().Split();
+            //foreach (string word in allWordsInFile)
+            //{
+            //    Console.WriteLine(word);
+            //}
         }
         static void Main(string[] args)
         {
